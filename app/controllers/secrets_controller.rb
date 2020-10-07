@@ -9,15 +9,4 @@ class SecretsController < ApplicationController
     current_user
   end
 
-  private
-
-  def logged_in?
-    if current_user
-      return current_user
-    else
-      redirect_to '/login'
-    end
-
-  end
-
 end
